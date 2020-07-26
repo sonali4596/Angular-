@@ -1,0 +1,32 @@
+<div class="maindiv w-100">
+    <div class ="image">
+        <a href="navbar.component.html">
+            <img src="assets/image/batch10.jpg" class="logo">
+        </a> 
+   </div>
+    <div class="navbar1 w-100">
+        <div class="_1nav text-right d-md-none d-block px-2 box-sizing-border-box"><i class="fa fa-bars text-dark _2nav"></i></div>
+        <div class="display-md-flex display-block" id="myTopnav">
+            <div class="p-2 box-sizing-border-box text-center bg-light">
+                <a href="" class="outline-none text-dark cursor-pointer">Home</a>
+            </div>
+            <div class="p-2 box-sizing-border-box text-center bg-light">
+                <a href="" class="outline-none text-dark cursor-pointer text-capitalize">About us</a>
+            </div>
+            <div class="p-2 box-sizing-border-box text-center bg-light">
+                <a href="" class="outline-none text-dark cursor-pointer">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('._2nav').click(function(){
+        if($(this).hassClass('_3nav')==true){
+            $(this).parent().hide();
+            $(this).removeClass('_3nav');
+        }else{
+            $(this).parent().show();
+            $(this).addClass('_3nav');
+        }
+    });
+</script>

@@ -1,0 +1,14 @@
+.maindiv{
+    height:300px;
+    
+}
+.member,.guide{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.created{
+    text-align: center;
+    margin-top:8%;
+}

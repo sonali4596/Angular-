@@ -1,0 +1,57 @@
+<div class="form1 w-100 box-sizing-border-box">
+    <div class="innerdiv box-sizing-border-box transition-1">
+        
+            <div class="heading">
+                <h2>FORM</h2>
+            </div>
+            <div ng-app="myApp" ng-controller="formCtrl">
+            <form  class="needs-validation" [formGroup]="forms" (ngSubmit)="onsubmit()" >
+              <div class="class1 w-100">
+                <label>
+                  Type of crop:
+                  <input type="text" class="form-control w-100" formControlName="crop_type" required>
+                </label>
+              </div>
+              <div class="class1 w-75">
+                <label>
+                  state:
+                  <input type="text" class="form-control" formControlName="state" required>
+                </label>
+              </div><div class="class1 w-75">
+                <label>
+                  date:
+                  <input type="date" class="form-control" formControlName="date" required>
+                </label>
+              </div><div class="class1 w-75">
+                <label>
+                  type of soil
+                  <input type="text" class="form-control" formControlName="soil_type" required>
+                </label>
+              </div><div class="class1 w-75">
+                <label>
+                  Area of land
+                  <input type="text" class="form-control" formControlName="land_area" required>
+                </label>
+              </div>
+              <div class="class1 w-75">
+                <label>
+                  type of land :
+                  <input type="text" class="form-control" formControlName="type_land" required>
+                </label>
+              </div>
+              <div class="class1 w-75">
+                <label>
+                  Climate :
+                  <input type="text" class="form-control" formControlName="climate" required>
+                </label>
+              </div>
+              
+                  
+                  
+              
+              
+              <button class="btn btn-primary class1 " [disabled]="!forms.valid">Submit</button>
+            </form> 
+            </div> 
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.form1{
+    height:900px;
+   align-content: center;
+   
+
+}
+.innerdiv{
+    height:95%;
+    width:50%;
+    margin-left:20%;
+    margin-right:20%;
+    background-color: beige;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+    
+}
+.innerdiv:hover {
+    transform: scale(1.05); 
+  }
+.heading{
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+.class1{
+
+    margin-left: 13%;
+
+}
